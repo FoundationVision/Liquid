@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <!-- <meta name="description" content="DESCRIPTION META TAG"> -->
+    <meta property="og:title"
+        content="Liquid: Language Models are Scalable Multi-modal Generators" />
+    <!-- <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" /> -->
+    <meta property="og:url" content="https://github.com/FoundationVision/Liquid" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/images/banner.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="320" />
+
+
+    <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- Keywords for your paper to be indexed by-->
+    <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Liquid</title>
+    <link rel="icon" type="image/x-icon" href="static/images/liquid_icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.1.1/gradio.js"></script>
+</head>
+
+<body>
+
+
+    <section class="hero banner">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title"><i class="liquid-icon"></i>Liquid: Language Models are Scalable <br /> 
+                            Multi-modal Generators <br />  via Unified Understanding and Generation</h1>
+                        <!-- <h1 class="title is-4 publication-title">
+                            </h1> -->
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://wjf5203.github.io/" target="_blank">Junfeng
+                                    Wu</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://enjoyyi.github.io/" target="_blank">Yi
+                                    Jiang</a><sup>2,&#8224</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://machuofan.github.io/" target="_blank">Chuofan
+                                    Ma</a><sup>3</sup>,</span>
+                            <span class="author-block">
+                                <a href="http://faculty.hust.edu.cn/liuyuliang/zh_CN/index/2417777/list/" target="_blank">Yuliang Liu</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://hszhao.github.io/" target="_blank">Hengshuang Zhao</a><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://shallowyuan.github.io/" target="_blank">Zehuan Yuan</a><sup>2</sup>,
+                            </span>
+                            <br /> 
+                            <span class="author-block">
+                                <a href="https://songbai.site/" target="_blank">Song Bai</a><sup>2,*</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="http://vlrlab.aia.hust.edu.cn/" target="_blank">Xiang Bai</a><sup>1,*</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Huazhong University of Science and Technology,</span>
+                            <span class="author-block"><sup>2</sup>Bytedance Inc,</span>
+                            <span class="author-block"><sup>3</sup>The University of Hong Kong</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author.</small></span>
+                            <span class="eql-cntrb"><small><br><sup>&#8224</sup>Project Lead.</small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="https://github.com/FoundationVision/Liquid" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2412.04332" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv-Liquid</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/spaces/Junfeng5/Liquid_demo" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">🤗</span>
+                                        <span>HF Demo: Liquid</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/spaces/Junfeng5/Liquid_v1" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">🤗</span>
+                                        <span>HF Model</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/42c134053368070e766a49ff3315471ca972b7e7.png" alt="carousel1" />
+                        </div>
+                        <div class="card-content has-text-centered">Photography of a tree with a heart, showcasing a whimsical, twisted tree trunk forming a perfect heartshaped void, set against a dreamy, ethereal forest backdrop... </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/0fc133c9d6c30db4d8ae208f58ce7145f1c01286.png" alt="carousel2" />
+                        </div>
+                        <div class="card-content has-text-centered">shot in fe gm 35mm f1.4 of asian female model, doe eyes,</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/0cde5554f43cd8bad70682b5b6ec9513eae48b62.png" alt="carousel3" />
+                        </div>
+                        <div class="card-content has-text-centered">A majestic Goddes of beauty, charming dressed in a regal, jeweled gown and ornate crown, her golden hair cascading down her back...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/08abf0be7d9808c46a3acaa6641295b22e598fd4.png" alt="carousel4" />
+                        </div>
+                        <div class="card-content has-text-centered">Jabberwock, hyperrealistic, photorealistic, high details, high quality, shot on Nikon D6, Galen Rowell, Peter Lik, Marc Adamus, David Muench.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/08dd2c8fbd84ec3096b82450296548c36d22bd70.png" alt="carousel5" />
+                        </div>
+                        <div class="card-content has-text-centered">pirate character portrait gray hair weathered face thick beard weathered face colorful headband patched clothing and ocean for the background</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/0a2476012afff7d1ea4fe22a541bf5765e5d1116.png" alt="carousel6" />
+                        </div>
+                        <div class="card-content has-text-centered">Smoked cheese hamburger with spicy tomato sauce., Editorial Photography, Photography, Shot on 70mm lens...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/0c54fd37f92c673dd32ef709588136f7381ea0cc.png" alt="carousel7" />
+                        </div>
+                        <div class="card-content has-text-centered">strawberries splashing, swirling liquid, realism, octane render, raytracing</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/0d39dfcc13da7b6d66d193b0ea599e147a516473.png" alt="carousel8" />
+                        </div>
+                        <div class="card-content has-text-centered">A magazine quality photograph of the sky filled with lightning and starting to show the first light of dawn. No ground in the photo. </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/1a9816b9b8084e5471ecef2f61b4678cac5a8c94.png" alt="carousel8" />
+                        </div>
+                        <div class="card-content has-text-centered"> photo of Princess of Persia, beauty, wallpapers, in the style of light maroon and azure, wandering eye, oriental, portrait, hurufiyya, darkly romantic realism...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/1e0a80efa66a35a4416664c17c3cd9c32d92e602.png" alt="carousel9" />
+                        </div>
+                        <div class="card-content has-text-centered">A highly realistic, closeup photograph of a beautiful 35 year old redread woman writing in her journal, sitting on her balcony wearing warm, stylish outfits. Shot on a Canon...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/2af2d38352bf25a1c1309db31638fdde8311c769.png" alt="carousel10" />
+                        </div>
+                        <div class="card-content has-text-centered">artificial intelligence, revolution, publishing, writer, hyperrealistic </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/319e02195bb246840cc914df7df3d21fe5626213.png" alt="carousel11" />
+                        </div>
+                        <div class="card-content has-text-centered">photo realistic beautiful young gothic woman </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/32fd579de0b39982fde6f1459dac9b027a695d7f.png" alt="carousel12" />
+                        </div>
+                        <div class="card-content has-text-centered">groow cannabis, photo réal 4K </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/337d51d7027295bbdf921fb49c04044a584e2aa3.png" alt="carousel13" />
+                        </div>
+                        <div class="card-content has-text-centered">female character fantasy world, for fantasy story, protagonist, interesting and detailed clothes, beautiful, medieval fantasy  cinematic shot  photo taken by canon, photo taken by fuji... </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/03ac63a4eded7defbaab6e01d2ba208b96d3c464.png" alt="carousel14" />
+                        </div>
+                        <div class="card-content has-text-centered">an intellectual brunette girl, normal looking, portrait style, 25 years, fancy dress, a party in the background, beautiful eyes...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/45c60880798d2a25ae9ae5337f8ac372301b1b96.png" alt="carousel15" />
+                        </div>
+                        <div class="card-content has-text-centered">Lets express the bright hope of a sprout that bloomed after enduring for a long time in a barren soil </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/526f11397bfe7a4fa20938b3898fedb4ebf99156.png" alt="carousel16" />
+                        </div>
+                        <div class="card-content has-text-centered">young blue dragon with horn lightning in the style of dd fantasy full body </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/5ad936766a637e5275dcd225aec392d5daa3ad5c.png" alt="carousel17" />
+                        </div>
+                        <div class="card-content has-text-centered">ychedelic parrot looking at the camera fine art painting, in the style of fluid lines, 8k resolution... </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/5b10263fae11d2e42b21d937d5624560ae164f30.png" alt="carousel18" />
+                        </div>
+                        <div class="card-content has-text-centered">youtube banner environment nature, no writing, fantasy, islam </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/60cdb2a52bfa9aa25bb4276ab96df0d9848f7aa3.png" alt="carousel19" />
+                        </div>
+                        <div class="card-content has-text-centered">tshirt vector, car in city graphic, synthwave, vivid colors, detailed </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/6c5946a7315a70f71865f439635baa1991b263eb.png" alt="carousel20" />
+                        </div>
+                        <div class="card-content has-text-centered">Portrait of an asian woman. She has pink violet hair style with modern complex hairdressing...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/82e5c6a4368b0dda99d944a6dd6662dc9d878f00.png" alt="carousel21" />
+                        </div>
+                        <div class="card-content has-text-centered">dragon dnd epic, full body, ultra wide angle, incredible detail, epic pose, in the style of Craig Mullins Realistic face, realistic hands, full body, hyper detailed dynamic scene...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/858227ad90845b84e42f30f9f1985e7ce61d3290.png" alt="carousel22" />
+                        </div>
+                        <div class="card-content has-text-centered">Willem Dafoe is the only Jesus Christ Ill ever need  </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/8caa8ddc69a55a9ec6ee504db70ed6f6b1c1d275.png" alt="carousel23" />
+                        </div>
+                        <div class="card-content has-text-centered">ghost of dragon, art style of kazuki takahashi, </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/a10310d89ae98aa3b0310afb73e528f57418781f.png" alt="carousel24" />
+                        </div>
+                        <div class="card-content has-text-centered">hedgehog face, floating in space, wearing space suit no helmet, cinematic, 50mm f1.8, unreal engine </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/b1c9f02287cebb63352adb781525c0b8f5f83c39.png" alt="carousel25" />
+                        </div>
+                        <div class="card-content has-text-centered">frozen heart broken neon </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/d1fa06d9d1267c103a0bd6fdb443f07084c00f8a.png" alt="carousel26" />
+                        </div>
+                        <div class="card-content has-text-centered">Maple tree in a bottle, elixir, the last dance of the sun bends into your palms the autumn light shines, the healing power of the Maple </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/d2a6e3d989af7c6c404389017010eeff664aae60.png" alt="carousel27" />
+                        </div>
+                        <div class="card-content has-text-centered">silhouette of tree against the starry night, in the style of intense use of light and shadow, stockphoto, sharpprickly, rounded, kintsukuroi, sunrays shine upon it, coastal scenery  </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/db72aefa86edad01479d213a8f061f7018fb8aa3.png" alt="carousel28" />
+                        </div>
+                        <div class="card-content has-text-centered">Capture a surreal portrait of a mythical creature against a bright yellow background. Dress them in a futuristic outfit with textural elements... </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/e257e32a4b8bd77159e5498ed59a92bd00ac1d3b.png" alt="carousel29" />
+                        </div>
+                        <div class="card-content has-text-centered">A pig dressed as a mason, by Bill Gekas  </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/e33da03c42f42f5b6a35a5b3e890038a59b0d142.png" alt="carousel30" />
+                        </div>
+                        <div class="card-content has-text-centered">a cute and funny dragon giving a rose to the viewer cartoon style Pixar 3D </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="static/images/MJHQ/f8d8d00c2145a0ddfa915921577fa2f719ed663a.png" alt="carousel31" />
+                        </div>
+                        <div class="card-content has-text-centered">the witch Larina Nix </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We present Liquid, an auto-regressive generation paradigm that seamlessly integrates visual comprehension and generation by tokenizing images into discrete 
+                            codes and learning these code embeddings alongside text tokens within a shared feature space for both vision and language. Unlike previous multimodal large 
+                            language model (MLLM), Liquid achieves this integration using a single large language model (LLM), eliminating the need for external pretrained visual embeddings 
+                            such as CLIP. For the first time, Liquid uncovers a scaling law that performance drop unavoidably brought by the unified training of visual and language 
+                            tasks diminishes as the model size increases. Furthermore, the unified token space enables visual generation and comprehension tasks to mutually enhance each 
+                            other, effectively removing the typical interference seen in earlier models. We show that existing LLMs can serve as strong foundations for Liquid, saving 
+                            100× in training costs while outperforming Chameleon in multimodal capabilities and maintaining language performance comparable to mainstream LLMs like LLAMA2. 
+                            Liquid also outperforms models like SD v2.1 and SD-XL (FID of 5.47 on MJHQ-30K), excelling in both vision-language and text-only tasks. This work demonstrates 
+                            that LLMs such as Qwen2.5 and GEMMA2 are powerful multimodal generators, offering a scalable solution for enhancing both vision-language understanding and generation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-centered has-text-centered">
+                <h2 class="title is-3">Online Demo</h2>
+                <gradio-app src="https://xxx" style="display: flex; justify-content: center;"></gradio-app>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">How Well Do LLMs Perform in Visual Generation?</h2>
+                <p>Compare with other auto-regressive based methods, Liquid achieves a better
+                    overall score on GenAI-Bench under both basic prompts and advanced prompts. This suggests that the images generated
+                    by Liquid align better semantically with the input text prompts.
+                    On MJHQ-30K, Liquid not only has a lower FID than all other auto-regressive methods
+                    but also surpasses most well-known diffusion models, indicating that LLMs are also capable of generating high-quality images.
+                </p>
+                <img loading="lazy" src="static/images/Liquid_figs/T2I_results.png" alt="T2I_results" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Will Understanding and Generation Tasks <span style="color: red; font-weight: bold;">Mutually Improve Each Other</span> ?</h2>
+                <h2>To answer this question, we conduct three sets of experiments. In the first set, we used a combination of 10M text-only
+                    data, 10M visual generation data, and 10M visual understanding data, resulting in a total of 30M
+                    data for the pre-training phase. The experiment with a
+                    1 : 1 : 1 data ratio of the three tasks serves as the baseline. Building on this baseline, we separately
+                    add an <span style="color: red; font-weight: bold;">additional 10M visual generation data</span> and <span style="color: red; font-weight: bold;">additional 10M visual understanding data</span>, forming a total
+                    of 40M data with data ratios of 1 : 2 : 1 and 1 : 1 : 2, respectively, labeled as "Add T2I" and "Add I2T". 
+                </h2>
+                <img loading="lazy" src="static/images/Liquid_figs/Mutually_improve.png" alt="huawei" />
+                <p>
+                    “Visual Gen." refers to the data used for training text-to-image generation, while “Visual Und." refers to the data used for visual understanding.
+                      Compared to the baseline, adding more visual understanding data enhances the visual generation capability, improving
+                 the semantic consistency between the generated content and the prompt. Conversely, increasing the
+                visual generation data similarly aids in enhancing the model's visual understanding ability. This
+                indicates that <span style="color: red; font-weight: bold;">when the tokens for visual generation and understanding are unified, they share a
+                    common optimization objective and can mutually enhance each other.</span> 
+                </p>
+              </div>
+        </div>
+    </section>
+
+
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Will Multimodal Generation Follow the Scaling Laws?</h2>
+                <p>We explore the visual generation performance of LLMs ranging from 0.5B to 32B in size after
+                    mixed training with language data and text-to-image data. As shown in figure belows, with the increase
+                    in model size and training iterations, the validation loss smoothly decreases, while token accuracy
+                    and VQA Score consistently increase. 
+                </p>
+                <img loading="lazy" src="static/images/Liquid_figs/MixT2I_scaling.png" alt="T2I_results" />
+                <img loading="lazy" src="static/images/Liquid_figs/scaling_visualize_4.jpg" alt="T2I_results" />
+                <p>
+                    Larger models eventually obtain more robust visual generation outcomes.
+                     Samples are drawn from Liquid models of 4 different sizes (0.5B, 1B, 2B, 9B) and
+                3 different training steps (5K, 15K, 40K).
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Does Visual Generation Compromise Language Ability?</h2>
+                <p>To validate whether acquiring image understanding and generation capabilities has any impact on the
+                    original language abilities of the LLMs, we report overall zero-shot performance across a suite of
+                    popular benchmarks.
+                </p>
+                <img loading="lazy" src="static/images/Liquid_figs/Language_tasks.png" alt="T2I_results" />
+                Liquid can largely retain the language ability compared with text-only training.
+                Multi-modal mixed training does impact language performance when the model size
+                is small. However, this degradation gradually disappears as the model size increases.
+                  
+                <img loading="lazy" src="static/images/Liquid_figs/Text_tradeoff.png" alt="T2I_results" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Does Language Ability Limit Visual Generation Performance?</h2>
+                <p>Mix training results in higher
+                    validation loss on visual generation tasks for models of every size. However, its impact on the VQA
+                    Score diminishes as the size of the model increases.
+                </p>
+                <img loading="lazy" src="static/images/Liquid_figs/T2I_tradeoff1.png" alt="T2I_results" />
+                <img loading="lazy" src="static/images/Liquid_figs/T2I_tradeoff2.png" alt="T2I_results" />
+            </div>
+        </div>
+    </section>
+
+
+
+ 
+
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{wu2024liquid,
+    title={Liquid: Language Models are Scalable Multi-modal Generators},
+    author={Wu, Junfeng and Jiang, Yi and Ma, Chuofan and Liu, Yuliang and Zhao, Hengshuang and Yuan, Zehuan and Bai, Song and Bai, Xiang},
+    journal={arXiv preprint arXiv:2412.04332},
+    year={2024}
+}</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://pixart-alpha.github.io/" target="_blank">PIXART</a> project page.
+                                You are free to borrow the of this website, we just ask that you link back to this page in
+                                the footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p class="has-text-centered">Total clicks: <span id="busuanzi_value_site_pv"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
