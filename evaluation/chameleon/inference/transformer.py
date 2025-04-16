@@ -376,7 +376,7 @@ def make_cache(
             cache entries (defaults to the default dtype).
 
     Returns:
-        The cache object to pass to ``Tranformer.forward``.
+        The cache object to pass to ``Transformer.forward``.
     """
 
     head_dim = args.dim // args.n_heads
