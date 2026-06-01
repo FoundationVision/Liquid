@@ -115,11 +115,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you find this project useful, please consider citing:
 
 ```bibtex
-@article{liquid,
-  title={Liquid: Language models are scalable and unified multi-modal generators},
+@article{wu2026liquid,
+  title={Liquid: Language Models are Scalable and Unified Multi-Modal Generators},
   author={Wu, Junfeng and Jiang, Yi and Ma, Chuofan and Liu, Yuliang and Zhao, Hengshuang and Yuan, Zehuan and Bai, Song and Bai, Xiang},
   journal={International Journal of Computer Vision},
-  year={2025}
+  volume={134},
+  number={1},
+  year={2026},
+  publisher={Springer US New York}
 }
 
 ```
